@@ -1,0 +1,7 @@
+
+# hugo build
+.hugo_build.lock
+resources/_gen
+
+# IDEs
+.idea

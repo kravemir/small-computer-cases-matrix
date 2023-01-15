@@ -1,0 +1,15 @@
+{{ define "main" }}
+<main>
+  <article>
+    <header>
+      <h1>{{- partial "title" . -}}</h1>
+    </header>
+    {{ with .Params.OfficialURL }}
+      <p>
+        <a href="{{.}}">Official page</a>
+      </p>
+    {{ end }}
+    <div>{{.Content}}</div>
+  </article>
+</main>
+{{ end }}
