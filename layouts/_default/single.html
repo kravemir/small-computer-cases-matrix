@@ -10,6 +10,7 @@
       </p>
     {{ end }}
     <div>{{.Content}}</div>
+    {{with .Params.Specifications}}<div><pre><code>{{ . | jsonify (dict "indent" "  ") }}</code></pre></div>{{end}}
   </article>
 </main>
 {{ end }}
